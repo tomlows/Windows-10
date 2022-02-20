@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== TITLE ==== -->
+    <title>Windows 10 | Weverton Lopes</title>
+
+    <!-- ==== SHARED IMAGE ON SOCIAL MEDIAS ==== -->
+    <meta property="og:image" content="images/share.jpg" />
+    <meta name="twitter:image" content="images/share.jpg" />
+    <meta itemprop="image" content="images/share.jpg" />
+
+    <!-- ==== FAVICON ==== -->
+    <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ==== BOXICONS ==== --> 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- ==== ÁREA DE TRABALHO ==== -->
+    <section class="workspace">
+
+        <!-- ==== ÍCONES DA ÁREA DE TRABALHO ==== -->
+        <div class="workspace-icons">
+            <div class="icon">
+                <img src="images/icons/dump.ico" alt="Ícone da lixeira">
+                <span>Lixeira</span>
+            </div>
+            <div class="icon" data-modalopen=".windows_modal_video">
+                <img src="images/icons/Movies-and-TV-icon.png" alt="Ícone da lixeira">
+                <span>Clique Aqui.mp4</span>
+            </div>
+        </div>
+
+        <!-- ==== BARRA DE TAREFAS ==== -->
+        <div class="taskbar">
+
+            <div class="taskbar-left-icons">
+
+                <div class="taskbar-star-menu">
+                    <i class='bx bxl-windows'></i>
+                </div>
+
+                <div class="taskbar-search">
+                    <div class="taskbar-search-input">
+                        <input type="text" name="search" id="search-taskbar" placeholder="Digite aqui parta pesquisar">
+                    </div>
+                    <div class="taskbar-search-icon">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+
+                <div class="taskbar-icons">
+                    <img src="images/icons/files.ico" alt="Explorador de Arquivos">
+                    <span>Explorador de Arquivos</span>
+                </div>
+                <div class="taskbar-icons">
+                    <img src="images/icons/edge.svg" alt="Microsoft Edge">
+                    <span>Microsoft Edge</span>
+                </div>
+                <div class="taskbar-icons">
+                    <img src="images/icons/store.png" alt="Microsoft Store">
+                    <span>Microsoft Store</span>
+                </div>
+                <div class="taskbar-icons">
+                    <img src="images/icons/chrome.png" alt="Google Chrome">
+                    <span>Google Chrome</span>
+                </div>
+                <div class="taskbar-icons">
+                    <img src="images/icons/vscode.png" alt="Visual Studio Code">
+                    <span>Visual Studio Code</span>
+                </div>
+            </div>
+
+            <!-- ==== SERVIÇOS ==== -->
+            <div class="taskbar-right-icons">
+
+                <div class="taskbar-icons-service">
+                    <img src="images/icons/volume.png" alt="Alto-falantes">
+                    <span>Alto-falantes: 100%</span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <img src="images/icons/Windows Defender.png" alt="Segurança do Windows">
+                    <span>Segurança do Windows - Nenhuma ação necessária</span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <img src="images/icons/intel-graphics.png" alt="Gráficos HD Intel ®">
+                    <span>Gráficos HD Intel ®</span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <img src="images/icons/onedrive.png" alt="OneDrive - Pessoa">
+                    <span id="more-top">OneDrive - Pessoal <br> Atualizado</span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <img src="images/icons/net.ico" alt="Acesso à internet">
+                    <span id="more-top">Weverton <br> Acesso à internet </span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <div class="date-hour">
+                        17:00 <br>
+                        13/02/2022
+                    </div>
+                    <span>domingo, 15 de fevereiro de 2022</span>
+                </div>
+
+                <div class="taskbar-icons-service">
+                    <img class="notification-manager-icon" src="images/icons/notification.png" alt="Não há notificações novas">
+                    <span>Não há notificações novas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==== MENU INICIAR ==== -->
+        <div class="start-menu">
+
+            <!-- ==== LEFT START MENU ==== -->
+            <aside class="left-start-menu">
+                <div class="left-start-menu-button">
+                    <i class='bx bx-menu'></i>
+                </div>
+               
+                <div class="left-start-menu-bottom-buttons">
+                    <ul>
+                        <li class="user-image"><img src="images/tom.jpg" alt="User Foto"><a href="#">Weverton Lopes</a></li>
+                        <li><i class='bx bx-file-blank'></i></li>
+                        <li><i class='bx bx-image'></i><li>                           
+                        <li><i class='bx bx-cog' ></i></li>
+                        <li><i class='bx bx-power-off'></i></li>
+                    </ul>
+                </div>
+            </aside>     
+            
+            <!-- ==== CENTER START MENU ==== -->
+            <aside class="center-start-menu">
+                <ul>
+                    <li><span>Adicionados recentemente</span></li>
+                    <li><a href="#"><img src="images/icons/chrome.png" alt="">Google Chrome</a></li>
+                    <li><a href="#"><img src="images/icons/vscode.png" alt="">Visual Studio Code</a></li>
+                    <li><span>Expandir <i class='bx bx-chevron-down'></i></span></li> 
+                    
+                    <!-- ==== A ==== -->
+                    <li class="per-letter"><span>A</span></li>
+                    <li><a href="#"><img src="images/icons/start-menu-files.png" alt="">Acessórios do Windows</a> <i class='bx bx-chevron-down'></i></li>
+                    <li><a href="#"><img src="images/icons/alarms.png" alt="">Alarmes e Relógio</a></li>
+
+                    <!-- ==== C ==== -->
+                    <li class="per-letter"><span>C</span></li>
+                    <li><a href="#"><img src="images/icons/calculator.png" alt="">Calculadora</a></li>
+                    <li><a href="#"><img src="images/icons/calendar.png" alt="">Calendário</a></li>
+                    <li><a href="#"><img src="images/icons/camera.png" alt="">Câmera</a></li>
+                    <li><a href="#"><img src="images/icons/snip.png" alt="">Captura e Esboço</a></li>
+                    <li><a href="#"><img src="images/icons/MSN-Weather-icon.png" alt="">Clima</a></li>
+                    <li><a href="#"><img src="images/icons/Settings.png" alt="">Configurações</a></li>
+
+                    <!-- ==== D ==== -->
+                    <li class="per-letter"><span>D</span></li>
+                    <li><a href="#"><img src="images/icons/Tips.png" alt="">Dicas</a></li>
+
+                    <!-- ==== E ==== -->
+                    <li class="per-letter"><span>E</span></li>
+                    <li><a href="#"><img src="images/icons/Mail-icon.png" alt="">Email</a></li>
+                    <li><a href="#"><img src="images/icons/Excel.png" alt="">Microsoft Excel</a></li>
+                </ul>
+            </aside>
+
+            <!-- ==== RIGHT START MENU ==== -->
+            <aside class="right-start-menu">
+                <span>Tudo ao seu alcance</span>
+
+                <div class="right-start-menu-content">
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/MSN-Weather-icon.png" alt="">
+                        </div>
+                        <span>Clima</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Groove-Music-fluent-design-icon.png" alt="">
+                        </div>
+                        <span>Groove Music</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/images.png" alt="">
+                        </div>
+                        <span>Imagens</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Movies-and-TV-icon.png" alt="">
+                        </div>
+                        <span>Filmes e Tv</span>
+                    </div>
+
+                    <div class="right-start-menu-apps" id="app-major">
+                        <div class="app-logo">
+                            <img src="images/icons/Solitaire-fluent-icon.png" alt="">
+                        </div>
+                        <span>Microsoft Solitaire Collection</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Mail-icon.png" alt="">
+                        </div>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/PowerPoint.png" alt="">
+                        </div>
+                        <span>PowerPoint</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Word.png" alt="">
+                        </div>
+                        <span>Microsoft Word</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Excel.png" alt="">
+                        </div>
+                        <span>Microsoft Excel</span>
+                    </div>
+
+                    <div class="right-start-menu-apps" id="app-major">
+                        <div class="app-logo">
+                            <img src="images/icons/Microsoft Store.ico" alt="">
+                        </div>
+                        <span>Microsoft Store</span>
+                    </div>
+
+                    <div class="right-start-menu-apps" id="app-major">
+                        <div class="app-logo">
+                            <img src="images/icons/Microsoft News.png" alt="">
+                        </div>
+                        <span>Microsoft Notícias</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Maps.png" alt="">
+                        </div>
+                        <span>Mapas</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/Paint 3D.png" alt="">
+                        </div>
+                        <span>Paint 3D</span>
+                    </div>
+
+                    <div class="right-start-menu-apps">
+                        <div class="app-logo">
+                            <img src="images/icons/People.png" alt="">
+                        </div>
+                        <span>Pessoas</span>
+                    </div>
+                 
+                </div>
+            </aside>
+        </div>
+
+        <!-- ==== LEFT START MENU HIDE ==== -->
+        <div class="left-start-menu-hide">
+            <div class="left-start-menu-hide-button">
+                <i class='bx bx-menu'></i>
+                <span>INICIAR</span>
+            </div>
+
+            <div class="left-start-menu-hide-bottom-buttons">
+                <ul>
+                    <li class="user-image"><img src="images/tom.jpg" alt="User Foto"><a href="#">Weverton Lopes</a></li>
+                    <li><i class='bx bx-file-blank'></i><a href="#">Documentos</a></li>
+                    <li><i class='bx bx-image'></i><a href="#">Imagens</a><li>                           
+                    <li><i class='bx bx-cog' ></i><a href="#">Configurações</a></li>
+                    <li><i class='bx bx-power-off'></i><a href="#">Ligar/Desligar</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ==== GERENCIADOR DE NOTIFICAÇÕES ==== -->
+        <div class="notification-manager">
+            <div class="notification-manager-title">
+                <span>Gerenciar notificações </span>
+            </div>
+
+            <div class="notification-manager-info">
+                <span>Não há notificações novas</span>
+            </div>
+
+            <div class="notification-manager-cogs">
+                <span>Recolher</span>
+                <div class="notification-manager-content">
+
+                    <div class="notification-manager-button">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bx-current-location'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>Localização</p>
+                        </div>                       
+                    </div>
+
+                    <div class="notification-manager-button" id="darkmod">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bx-sun'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>Luz Noturna</p>
+                        </div>    
+                    </div>
+
+                    <div class="notification-manager-button">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bxs-plane'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>Modo Avião</p>
+                        </div>    
+                    </div>
+
+                    <div class="notification-manager-button">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bx-wifi'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>Rede</p>
+                        </div>    
+                    </div>
+
+                    <div class="notification-manager-button">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bx-cog'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>Todas as configurações</p>
+                        </div>    
+                    </div>
+
+                    <div class="notification-manager-button">
+                        <div class="notification-manager-button-icon">
+                            <i class='bx bx-network-chart'></i>
+                        </div>
+                        <div class="notification-manager-button-title">
+                            <p>VPN</p>
+                        </div>    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ==== MODAL VIDEO DE APRESENTAÇÃO ==== -->
+        <div class="web_modal" data-modalclose="true">
+            <div class="web_modal_box windows_modal_video">
+                <p class="title">Conheça o projeto</p>
+                
+                <video width="100%" height="520px" controls>
+                    <source src="video/video-de-apresentação.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ==== JS ==== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

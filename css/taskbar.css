@@ -1,0 +1,150 @@
+.taskbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: var(--galassmorphism);
+    backdrop-filter: blur(50px);
+    border-top: var(--border);
+    z-index: 11;
+}
+
+.taskbar-left-icons {
+    display: flex;
+}
+
+.taskbar-right-icons {
+    display: flex;
+    padding-right: 20px;
+}
+
+.taskbar-star-menu {
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+}
+
+.taskbar-star-menu:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #0072CB;
+}
+
+.taskbar-star-menu i {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.taskbar-search-input {
+    position: relative;
+}
+
+.taskbar-search-input input {
+    padding: 10px 40px;
+    width: 343px;
+    border: var(--border);
+}
+
+.taskbar-search-input input:focus {
+    outline: none;
+    border: 2px solid #0072CB;
+}
+
+.taskbar-search-icon {
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+}
+
+.taskbar-search-icon i {
+    font-size: var(--font-medium);
+}
+
+.taskbar-icons {
+    padding: 4px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskbar-icons:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.taskbar-icons img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.taskbar-icons:hover.taskbar-icons span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.taskbar-icons span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -23px;
+    padding: 1px 4px;
+    white-space: nowrap;
+    font-size: 0.8em;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.taskbar-icons-service {
+    padding: 7px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.taskbar-icons-service:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.taskbar-icons-service img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.taskbar-icons-service:hover.taskbar-icons-service span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.taskbar-icons-service span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -22px;
+    right: 0;
+    padding: 1px 4px;
+    white-space: nowrap;
+    font-size: 0.8em;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#more-top {
+    top: -40px !important;
+}
+
+.date-hour {
+    text-align: center;
+    font-size: 0.7em;
+    margin: 0 10px;
+    color: var(--text);
+}

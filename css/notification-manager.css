@@ -1,0 +1,81 @@
+
+.notification-manager{
+    position: fixed;
+    top: 0;
+    right: -29%;
+    width: 29%;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--galassmorphism);
+    backdrop-filter: blur(100px);
+    transition: all 0.4s ease;
+    z-index: 11;
+}
+
+.notification-manager-open{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 29%;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--galassmorphism);
+    backdrop-filter: blur(100px);
+    transition: all 0.4s ease;
+    z-index: 11;
+}
+
+.notification-manager-title{
+    text-align: end;
+    flex-basis: 10%;
+}
+
+.notification-manager-title span{
+    font-size: var(--font-min);
+    color: var(--text);
+}
+
+.notification-manager-info{
+    text-align: center;
+    color: var(--text);
+}
+
+.notification-manager-cogs span{
+    font-size: var(--font-min);
+    color: var(--text); 
+}
+
+.notification-manager-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.notification-manager-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 88px;
+    height: 65px;
+    padding: 5px;
+    background: var(--contents);
+}
+
+.notification-manager-button-icon i{
+    font-size: var(--font-large);
+    color: var(--text); 
+}
+
+.notification-manager-button-title p{
+    font-size: 0.7em;
+    color: var(--text); 
+     line-height: 1;
+}
